@@ -8,3 +8,6 @@ The solveForK1.m file is a helper file which solves for the all-important K1 val
 
 ## Purpose:
 The point of this project is to prove the concept that adjusting the hip stiffness through changing the K1 value allows for ground reaction force redirection. Once this concept is proven, moving onto a full quadrupedal system is the next step.
+
+## Method:
+I used symbolic variables to set up my dynamic equations using the Lagrange method. By setting up the potential and kinetic energy equations, and including nonconservative forces, the Lagrange equation can be used to find the dynamic equations of this system, which are then solved using ode45 for every timestep through a single dynamic stance phase.
